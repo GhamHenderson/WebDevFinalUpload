@@ -4,7 +4,6 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -31,17 +30,3 @@ session_start();
 </div>
 
 
-=======
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="../../CustomSite/css/signin.css">
-    <link rel="stylesheet" type="text/css" href="../../CustomSite/css/stylesheet.css">
-    <title>Sign in</title>
-</head>
-
-<body>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php include "../templates/header.php";
 include "config.php"?>
 
@@ -9,22 +8,6 @@ include "config.php"?>
     <!-- Featured Products -->
     <div class="container">
         <h1 class="text-center">New & Popular Games <span class="glyphicon glyphicon-cd" aria-hidden="true"></span></h1>
-=======
-<?php include "../templates/header.php"; ?>
-
-
-    <div class="mainarea">
-        <h4>Status: You are logged in <?php echo $_SESSION['Username'];?> </h4>
-        <form action="logout.php" method="post" name="Logout_Form" class="form-signin">
-            <button name="Submit" value="Logout" class="button" type="submit">Log out</button>
-        </form>
-    </div>
-
-
-    <!-- Featured Products -->
-    <div class="container">
-        <h1 class="text-center">New & Popular Games</h1>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
         <div class="row">
 
             <!-- Product 1 -->
@@ -42,12 +25,7 @@ include "config.php"?>
                         <div class="input-group">
                             <input type="number" class="form-control" value="1">
                             <span class="input-group-btn">
-<<<<<<< HEAD
 								<button class="btn btn-primary" type="button" onclick="document.location='checkout.php'"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-=======
-								<button class="btn btn-primary" type="button">
-									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 									Add to Cart
 								</button>
 							</span>
@@ -59,11 +37,7 @@ include "config.php"?>
             <!-- Product 2 -->
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail featured-product">
-<<<<<<< HEAD
                     <a href="">
-=======
-                    <a href="#">
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
                         <img src="../images/fifa.jfif" alt="fifa">
                     </a>
                     <div class="caption">
@@ -75,12 +49,7 @@ include "config.php"?>
                         <div class="input-group">
                             <input type="number" class="form-control" value="1">
                             <span class="input-group-btn">
-<<<<<<< HEAD
 								<button class="btn btn-primary" type="button" onclick="document.location='checkout.php'"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-=======
-								<button class="btn btn-primary" type="button">
-									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 									Add to Cart
 								</button>
 							</span>
@@ -104,11 +73,7 @@ include "config.php"?>
                         <div class="input-group">
                             <input type="number" class="form-control" value="1">
                             <span class="input-group-btn">
-<<<<<<< HEAD
 								<button class="btn btn-primary" type="button" onclick="document.location='checkout.php'">
-=======
-								<button class="btn btn-primary" type="button">
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 									Add to Cart
 								</button>
@@ -133,11 +98,7 @@ include "config.php"?>
                         <div class="input-group">
                             <input type="number" class="form-control" value="1">
                             <span class="input-group-btn">
-<<<<<<< HEAD
 								<button class="btn btn-primary" type="button" onclick="document.location='checkout.php'">
-=======
-								<button class="btn btn-primary" type="button">
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 									Add to Cart
 								</button>
@@ -149,15 +110,10 @@ include "config.php"?>
         </div>
     </div><!-- /.container -->
 
-<<<<<<< HEAD
-=======
+<?php if($_SESSION['Active'] == true){ ?>
+    <form action="logout.php" method="post" name="Logout_Form" class="form-signin">
+        <button name="Submit" value="Logout" class="button" type="submit">Log out</button>
+    </form>
+<?php } ?>
 
-    <div class="container text-center">
-        <h1>Grahamz Gamez - Great Gaming, Great Price</h1>
-        <p class="lead">Please have a look at our wonderful stock available.</p>
-        <img class="img-responsive img-circle center-block" src="images/service.jpg" alt="">
-    </div><!--/.container-->
-
-
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 <?php include "../templates/footer.php"; ?>

@@ -8,11 +8,7 @@ try {
     require "common.php";
 
     $connection = new PDO($dsn, $username, $password, $options);
-<<<<<<< HEAD
     $sql = "SELECT * FROM gameinfo";
-=======
-    $sql = "SELECT * FROM databasetest.gameinfo";
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
     $statement = $connection->prepare($sql);
     $statement->execute();
     $result = $statement->fetchAll();
@@ -42,11 +38,7 @@ try {
                 <td><?php echo escape($row["gameTitle"]); ?></td>
                 <td><?php echo escape($row["genre"]); ?></td>
                 <td><?php echo escape($row["price"]); ?></td>
-<<<<<<< HEAD
                 <td><a href="update-single-game.php?id=<?php echo escape($row["gameID"]); ?>">Edit</a></td>
-=======
-                <td><a href="update-single-game.php?id=<?php echo escape($row[">Edit</a></td>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
             </tr>
         <?php endforeach; ?>
         </tbody>

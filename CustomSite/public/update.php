@@ -42,20 +42,12 @@ try {
                 <td><?php echo escape($row["email"]); ?></td>
                 <td><?php echo escape($row["age"]); ?></td>
                 <td><?php echo escape($row["location"]); ?></td>
-<<<<<<< HEAD
                 <td><a href="update-single.php?id=<?php echo escape($row["id"]); ?>">Edit</a></td>
-=======
-                <td><a href="update-single.php?id=<?php echo escape($row[]) ?>Edit</a></td>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
 
-<<<<<<< HEAD
     <a href="index.php">Back to home</a>
-=======
-    <a href="index.php">Back to home</td>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 
 <?php require "../templates/footer.php"; ?>

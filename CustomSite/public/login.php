@@ -27,25 +27,21 @@ require_once('../templates/header2.php'); ?>
 
     if(isset($_POST['Submit']))
     {
-
-        /* Check if the form's username and password matches */
-        /* these currently check against variable values stored in config.php but later we will see how these can be checked against information in a database*/
         if( ($_POST['Username'] == $Username) && ($_POST['Password'] == $Password) )
         {
+           // if(isset($userList[$Username])) {
 
-            /* Success: Set session variables and redirect to protected page */
-            $_SESSION['Username'] = $Username;
-            $_SESSION['Active'] = true;
-            header("location:index.php");
-            exit;
-    }
-        else
-            echo 'Incorrect Username or Password';
-    }
-
-    ?>
+                $_SESSION['Username'] = $Username;
+                $_SESSION['Active'] = true;
+                header("location:index.php");
+                exit;
+        }
+            else
+                echo 'Incorrect Username or Password';
+        } ?>
 
 
+Not Registered? - <a href="register.php">Register Here</a>
 
 </div>
 </body>

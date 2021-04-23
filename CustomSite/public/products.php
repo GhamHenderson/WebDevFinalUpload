@@ -6,11 +6,7 @@
     'description' => 'Fast Paced Sports Game.',
     'price' => 70.00,
     'stars' => 4,
-<<<<<<< HEAD
     'image' => 'exmapleFifa.png'
-=======
-    'image' => 'peanut_butter.png'
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 ];
  $products['012'] = [
     'id' => 02,
@@ -18,11 +14,7 @@
     'description' => 'Car Football.',
     'price' => 15.00,
     'stars' => 5,
-<<<<<<< HEAD
     'image' => 'ExampleRL.png'
-=======
-    'image' => 'chocolate_cheese_cake.png'
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 ];
 
 $products['013'] = [
@@ -31,11 +23,7 @@ $products['013'] = [
     'description' => 'Kids Block Game.',
     'price' => 20.00,
     'stars' => 5,
-<<<<<<< HEAD
     'image' => 'ExampleMines.png'
-=======
-    'image' => 'chocolate_cheese_cake.png'
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 ];
 
 $products['014'] = [
@@ -44,9 +32,5 @@ $products['014'] = [
     'description' => 'Fast Paced Shooter.',
     'price' => 69.00,
     'stars' => 5,
-<<<<<<< HEAD
     'image' => 'ExampleCod.png'
-=======
-    'image' => 'chocolate_cheese_cake.png'
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 ];

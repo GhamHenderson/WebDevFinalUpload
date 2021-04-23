@@ -13,11 +13,7 @@ if (isset($_GET["id"])) {
 
         $id = $_GET["id"];
 
-<<<<<<< HEAD
         $sql = "DELETE FROM users WHERE id = :id";
-=======
-        $sql = "DELETE FROM databasetest.users WHERE id = :id";
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
 
         $statement = $connection->prepare($sql);
         $statement->bindValue(':id', $id);
@@ -46,11 +42,8 @@ try {
 
     <h2>Delete users</h2>
 
-<<<<<<< HEAD
 <?php if ($success) echo $success; ?>
 
-=======
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
     <table>
         <thead>
         <tr>
@@ -60,10 +53,7 @@ try {
             <th>Email Address</th>
             <th>Age</th>
             <th>Location</th>
-<<<<<<< HEAD
             <th>Date</th>
-=======
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
             <th>Delete</th>
         </tr>
         </thead>
@@ -76,12 +66,8 @@ try {
                 <td><?php echo escape($row["email"]); ?></td>
                 <td><?php echo escape($row["age"]); ?></td>
                 <td><?php echo escape($row["location"]); ?></td>
-<<<<<<< HEAD
                 <td><?php echo escape($row["date"]); ?> </td>
                 <td><a href="delete.php?id=<?php echo escape($row["id"]); ?>">Delete</a></td>
-=======
-                <td><a href="delete.php?id=<?php echo escape($row) ?>Delete</a></td>
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
             </tr>
         <?php endforeach; ?>
         </tbody>

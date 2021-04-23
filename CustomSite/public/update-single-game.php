@@ -17,11 +17,7 @@ if (isset($_POST['submit'])) {
             SET gameID = :gameID,
                 gameTitle = :gameTitle,
                 genre = :genre,
-<<<<<<< HEAD
                 price = :price
-=======
-                price = :price,
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
             WHERE gameID = :gameID";
 
         $statement = $connection->prepare($sql);
@@ -35,11 +31,7 @@ if (isset($_GET['gameID'])) {
     try {
         $connection = new PDO($dsn, $username, $password, $options);
         $gameID = $_GET['gameID'];
-<<<<<<< HEAD
         $sql = "SELECT * FROM databasetest.gameinfo WHERE databasetest.gameinfo.gameID = :gameID";
-=======
-        $sql = "SELECT * FROM databasetest.gameinfo WHERE databasetest.gameID = :gameID";
->>>>>>> d349fa6afd7ceb46d341aeebaa771df7d710b414
         $statement = $connection->prepare($sql);
         $statement->bindValue(':gameID', $gameID);
         $statement->execute();
