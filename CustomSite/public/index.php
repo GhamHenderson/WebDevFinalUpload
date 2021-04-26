@@ -110,10 +110,5 @@ include "config.php"?>
         </div>
     </div><!-- /.container -->
 
-<?php if($_SESSION['Active'] == true){ ?>
-    <form action="logout.php" method="post" name="Logout_Form" class="form-signin">
-        <button name="Submit" value="Logout" class="button" type="submit">Log out</button>
-    </form>
-<?php } ?>
 
 <?php include "../templates/footer.php"; ?>
